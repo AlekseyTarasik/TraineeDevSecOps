@@ -90,14 +90,15 @@ Also, the database in the first AZ and the second AZ have a connection. This is 
 On Test, the database versions are connected to the Azure Storage service to send logs and dumps.
 
 Various useful links to guides for creating virtual networks in microsoft azure:
-[Create a virtual network using the Azure portal]
-[Create a virtual network using PowerShell]
-[Create a virtual network using the Azure CLI]
-[Create a virtual network - Resource Manager template]
-[Filter network traffic]
-[Route network traffic]
-[Restrict network access to resources]
-[Connect virtual networks]
+
+* [Create a virtual network using the Azure portal]
+* [Create a virtual network using PowerShell]
+* [Create a virtual network using the Azure CLI]
+* [Create a virtual network - Resource Manager template]
+* [Filter network traffic]
+* [Route network traffic]
+* [Restrict network access to resources]
+* [Connect virtual networks]
 
 
 
