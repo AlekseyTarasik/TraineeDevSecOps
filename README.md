@@ -88,3 +88,24 @@ From the interesting things here, you can see that for access to nw-prod-nif-coo
 Also, the database in the first AZ and the second AZ have a connection. This is done for fault tolerance. If the "master" database has problems (disabled), then using asynchronous replication technology, some of the latest data is sent to the "standby" database and the project is connected to another database.
 
 On Test, the database versions are connected to the Azure Storage service to send logs and dumps.
+
+Various useful links to guides for creating virtual networks in microsoft azure:
+[Create a virtual network using the Azure portal]
+[Create a virtual network using PowerShell]
+[Create a virtual network using the Azure CLI]
+[Create a virtual network - Resource Manager template]
+[Filter network traffic]
+[Route network traffic]
+[Restrict network access to resources]
+[Connect virtual networks]
+
+
+
+[Create a virtual network using the Azure portal]: https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-portal
+[Create a virtual network using PowerShell]: https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-powershell
+[Create a virtual network using the Azure CLI]: https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-cli
+[Create a virtual network - Resource Manager template]: https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-template
+[Filter network traffic]: https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic
+[Route network traffic]: https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-create-route-table-portal
+[Restrict network access to resources]: https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-restrict-network-access-to-resources
+[Connect virtual networks]: https://docs.microsoft.com/en-us/azure/virtual-network/tutorial-connect-virtual-networks-portal
