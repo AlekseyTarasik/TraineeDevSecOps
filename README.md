@@ -90,8 +90,9 @@ Also, the database in the first AZ and the second AZ have a connection. This is 
 On Prod, the database versions are connected to the Azure Storage service to send logs and dumps.
 
 Azure Network Security Groups (NSGs) is a network security service to refine traffic from and to Azure VNet. It is an OSI layer 3 & 4 network security service. An Azure NSG comprises of several security rules that users can allow or deny. These rules are evaluated based on the 5-tuple hash. This 5-tuple hash takes values from the source IP address, source port number, destination IP address, destination port number, and protocol type in use. You can associate Network Security Groups with a VNet or a VM network interface.
+Azure Firewall allows you to mask the source and destination network addresses while NSG doesn’t.
 
-
+![fw-vs-nsg2](https://user-images.githubusercontent.com/91851663/153874308-ca791948-2a3e-4500-9086-6f47c7a1c64e.png)
 
 Various useful links to guides for creating virtual networks in microsoft azure:
 
