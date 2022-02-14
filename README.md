@@ -87,7 +87,11 @@ From the interesting things here, you can see that for access to nw-prod-nif-coo
 
 Also, the database in the first AZ and the second AZ have a connection. This is done for fault tolerance. If the "master" database has problems (disabled), then using asynchronous replication technology, some of the latest data is sent to the "standby" database and the project is connected to another database.
 
-On Test, the database versions are connected to the Azure Storage service to send logs and dumps.
+On Prod, the database versions are connected to the Azure Storage service to send logs and dumps.
+
+Azure Network Security Groups (NSGs) is a network security service to refine traffic from and to Azure VNet. It is an OSI layer 3 & 4 network security service. An Azure NSG comprises of several security rules that users can allow or deny. These rules are evaluated based on the 5-tuple hash. This 5-tuple hash takes values from the source IP address, source port number, destination IP address, destination port number, and protocol type in use. You can associate Network Security Groups with a VNet or a VM network interface.
+
+
 
 Various useful links to guides for creating virtual networks in microsoft azure:
 
