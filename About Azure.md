@@ -50,10 +50,17 @@ A resource group is a container that holds related resources for an Azure soluti
 
 The resource group stores metadata about the resources. Therefore, when you specify a location for the resource group, you are specifying where that metadata is stored. For compliance reasons, you may need to ensure that your data is stored in a particular region.
 
+Resource Groups in Azure is the approach to group the collection of resources that helps for easy maintenance of the Resources for example easy monitoring, automatic provisioning, etc. This is the main Purpose of the ResourceGroups.
 
+A Resource Group in Azure is nothing but a logical container where you are creating your Azure resources. That holds all your Azure Resources. A resource group created in a specific region can contain the resources created in the other regions. There is no restriction on that.
 
+#### Azure Region
+##### What is an Azure Region?
+Simply put, an Azure Region is a set of Datacenters that are connected through a dedicated low-latency network. How many datacenters does a region contain. Well, we do not have a fixed number. It varies. There are regions of different sizes. A Region could be made up of just 1 dataceneter or multiple datacenters. The point is, an Azure Region is a group of one or more Azure Datacenters. At the momenе Azure has more than 60 regions worldwide.
 
+![azure-regions-explained](https://user-images.githubusercontent.com/91851663/153851258-b3bb96b1-76ad-4dee-8fbc-af9de1536d81.jpg)
 
+You have the flexibility to deploy your applications and data to any Azure region you want. You can even deploy across multiple regions to deliver cross-region resiliency.
 
 
 [How to Effectively Use Azure Management Groups, Subscriptions, and Resource Groups]: https://cloudacademy.com/blog/how-to-effectively-use-azure-management-groups-subscriptions-and-resource-groups/
