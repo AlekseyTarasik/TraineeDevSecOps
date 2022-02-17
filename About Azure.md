@@ -62,5 +62,35 @@ Simply put, an Azure Region is a set of Datacenters that are connected through a
 
 You have the flexibility to deploy your applications and data to any Azure region you want. You can even deploy across multiple regions to deliver cross-region resiliency.
 
+#### Virtual Network
+##### Why use an Azure Virtual network?
+Azure virtual network enables Azure resources to securely communicate with each other, the internet, and on-premises networks. Key scenarios that you can accomplish with a virtual network include - communication of Azure resources with the internet, communication between Azure resources, communication with on-premises resources, filtering network traffic, routing network traffic, and integration with Azure services.
+
+#### Communicate between Azure resources
+Azure resources communicate securely with each other in one of the following ways:
+
+* Through a virtual network: You can deploy VMs, and several other types of Azure resources to a virtual network, such as Azure App Service Environments, the Azure Kubernetes Service (AKS), and Azure Virtual Machine Scale Sets. 
+* Through a virtual network service endpoint: Extend your virtual network private address space and the identity of your virtual network to Azure service resources, such as Azure Storage accounts and Azure SQL Database, over a direct connection. Service endpoints allow you to secure your critical Azure service resources to only a virtual network. 
+* Through VNet Peering: You can connect virtual networks to each other, enabling resources in either virtual network to communicate with each other, using virtual network peering. The virtual networks you connect can be in the same, or different, Azure regions.
+
+#### Communicate with on-premises resources
+You can connect your on-premises computers and networks to a virtual network using any combination of the following options:
+
+* Point-to-site virtual private network (VPN): Established between a virtual network and a single computer in your network. Each computer that wants to establish connectivity with a virtual network must configure its connection. The communication between your computer and a virtual network is sent through an encrypted tunnel over the internet.
+* Site-to-site VPN: Established between your on-premises VPN device and an Azure VPN Gateway that is deployed in a virtual network. This connection type enables any on-premises resource that you authorize to access a virtual network. The communication between your on-premises VPN device and an Azure VPN gateway is sent through an encrypted tunnel over the internet.
+* Azure ExpressRoute: Established between your network and Azure, through an ExpressRoute partner. This connection is private. Traffic does not go over the internet. 
+
+#### Filter network traffic
+You can filter network traffic between subnets using either or both of the following options:
+
+* Network security groups: Network security groups and application security groups can contain multiple inbound and outbound security rules that enable you to filter traffic to and from resources by source and destination IP address, port, and protocol.
+* Network virtual appliances: A network virtual appliance is a VM that performs a network function, such as a firewall, WAN optimization, or other network function.
+
+#### Route network traffic
+Azure routes traffic between subnets, connected virtual networks, on-premises networks, and the Internet, by default. You can implement either or both of the following options to override the default routes Azure creates:
+
+* Route tables: You can create custom route tables with routes that control where traffic is routed to for each subnet.
+* Border gateway protocol (BGP) routes: If you connect your virtual network to your on-premises network using an Azure VPN Gateway or ExpressRoute connection, you can propagate your on-premises BGP routes to your virtual networks.
+
 
 [How to Effectively Use Azure Management Groups, Subscriptions, and Resource Groups]: https://cloudacademy.com/blog/how-to-effectively-use-azure-management-groups-subscriptions-and-resource-groups/
