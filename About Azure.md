@@ -92,5 +92,17 @@ Azure routes traffic between subnets, connected virtual networks, on-premises ne
 * Route tables: You can create custom route tables with routes that control where traffic is routed to for each subnet.
 * Border gateway protocol (BGP) routes: If you connect your virtual network to your on-premises network using an Azure VPN Gateway or ExpressRoute connection, you can propagate your on-premises BGP routes to your virtual networks.
 
+#### Azure Networking Services
+* Azure Virtual Network - Emulation/representation of physical networking in the cloud, grouping, filtering and segmentation of network related resources.
+* Azure VPN Gateway - Connecting On-Premises with the Virtual Network and Virtual Networks with each other (remember about VNet Peering).
+* Azure Load Balancer - Even traffic distribution for non-HTTP (non-web) traffic.
+* Azure Application Gateway - Even traffic distribution for HTTP (web) traffic.
+* Azure Content Delivery Network (CDN) - Global content caching & distribution to offload web applications and reduce latency.
+
+
+
+
+
+
 
 [How to Effectively Use Azure Management Groups, Subscriptions, and Resource Groups]: https://cloudacademy.com/blog/how-to-effectively-use-azure-management-groups-subscriptions-and-resource-groups/
